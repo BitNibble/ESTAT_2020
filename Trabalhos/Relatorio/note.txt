@@ -1,0 +1,156 @@
+LOCATION:
+https://github.com/sergio1020881/ESTAT
+https://github.com/sergio1020881/ESTAT/blob/master/TPC/ESTAT1920 TP POR_1020881.xlsx
+https://github.com/sergio1020881/ESTAT/blob/master/ESTAT_SERGIO1020881.pdf
+https://github.com/sergio1020881/ESTAT/blob/master/ESTAT_SERGIO1020881.tex
+
+
+sudo apt-get install wxmaxima
+sudo apt-get install gnuplot
+
+
+plot2d ( x^2 - 1, [x, -3, 3], [box, false], grid2d,
+      [yx_ratio, 1], [axes, solid], [xtics, -2, 4, 2],
+      [ytics, 2, 2, 6], [label, ["x", 2.9, -0.3],
+      ["x^2-1", 0.1, 8]], [title, "A parabola"])$
+
+
+(%i1) plot2d (exp(3*s), [s, -2, 2], logy)$
+
+
+TEE_A(x):=1/sqrt(2*%pi*Q_A)*%e^-(1/2*((x-M_A)/Q_A)^2);
+wxplot2d([TEE_A(x),TEE_B(x)],[x,1,45],[y,0,0.2],grid2d);
+
+
+
+
+Este trabalho consiste no estudo de Estatistica das Entregas Expresso em  duas regioes, as variaveis em estudo é o tempo de demora das entregas e também quantas entregas são enregues num determinado tempo ou unidade de tempo [u.t,]. Na primeira situação foram retiradas 120 amostras e 90 nas quantidades entregues num intervalo de tempo [u.t].
+
+Pretende-se fazer um estudo destas duas variaveis aleatorias de forma a responder a questoes empostas e tomar decisoes, recorresndo aos metodos expostos.
+
+Como se trata de amostras recoremos a Inferencia de forma a tirar conclusoes com um grau de incerteza.
+
+Durante este relatorio sera demonstrado resultados e suas interpretações.
+
+No fim apresentado as conclusões que podemos ou sabemos retirar.
+
+@Booklet{booklet_1,
+title = {},
+OPTkey = {•},
+OPTauthor = {},
+OPThowpublished = {},
+OPTaddress = {•},
+OPTmonth = {•},
+OPTyear = {},
+OPTnote = {•},
+OPTannote = {•}
+}
+
+@InCollection{incollection_1,
+author = {},
+title = {},
+booktitle = {},
+OPTcrossref = {•},
+OPTkey = {•},
+OPTpages = {•},
+OPTpublisher = {},
+OPTyear = {},
+OPTeditor = {•},
+OPTvolume = {},
+OPTnumber = {•},
+OPTseries = {•},
+OPTtype = {•},
+OPTchapter = {•},
+OPTaddress = {•},
+OPTedition = {•},
+OPTmonth = {•},
+OPTnote = {•},
+OPTannote = {•}
+}
+
+
+
+
+Inferencia - IC é das amostras poder inferir characteristicas as populações com um certo grau de incerteza pre-determinado.
+
+
+Na prática, considera-se que a qualidade da aproximação é suficientemente boa quando nmaior ou igua 30
+grandes amostras, se n maior ou igaula 30
+
+
+%\\
+%Desvio padrao\\
+%$s = \sqrt{s^2}$
+%coeficiente de variacao\\
+%\[cv = \frac{s}{\bar{x}}\]
+%Mediana para dados quantitativos continuos classificados
+%\[ M_e=
+%L_k+\left(\frac{0.5-F_{k-1}}{f_k}\right)h_k
+%\]
+%Quartil para dados quantitativos contínuos classificados
+%\[z_\alpha=L_k+\left(\frac{\alpha-F_{k-1}}{f_k}\right)h_k\]
+%Momento centrado de ordem r,$m_r$
+%Para dados classificados:
+%\[m_r=\frac{1}{n}\sum_{i=1}^c(x_i-\bar{x})^rn_i\]
+%Coeficiente de assimetria amostral, $a_3$
+%\[a_3=\frac{m_3}{s^3}\]
+%Coeficiente de curtose amostral, $a_4$
+%\[a_4=\frac{m_4}{s^4}\]
+%frequência relativa\\
+%\[f_i = \frac{n_i}{n}\]
+%\[\sum_{i=1}^cn_i = n\]
+%\[\sum_{1=1}^cf_i = 1\]
+%frequência acumulada\\
+%\[N_i = \sum_{j=1}^in_j\]
+%frequencia relativa acumulada\\
+%\[F_i = \sum_{j=1}^if_i\]
+%Inferencia - IC é das amostras poder inferir characteristicas as populações com um certo grau de incerteza pre-determinado.
+%Mediana para dados não classificados em série ordenada
+%\[ M_e= 
+%\begin{cases}
+%    \frac{X_{n/2}+X_{n/2+1}}{2}, & n \quad par \\
+%    \frac{X_{n+1}}{2} & n \quad impar
+%\end{cases}
+%\]
+%Quartil para dados não classificados em série ordenada
+%\[z_\alpha=x_k\]
+%onde $x_k$ é o maior inteiro menor que $n_{\alpha+1}$
+%Média aritmetica \[\bar{x}\] dados nao classificados\\
+%\[\bar{x} = \frac{1}{n}\sum_{1=1}^n\]
+%Variância de uma amostra $s^2$: \\
+%dados nao clasificados \\
+%\begin{minipage}{0pt}
+%\begin{flalign*}
+%s^2 = \frac{1}{n-1}\sum_{i=1}^n (x_i-\bar{x})^2
+%\end{flalign*}
+%\end{minipage}
+%Para dados não classificados:
+%\[m_r=\frac{1}{n}\sum_{i=1}^n(x_i-\bar{x})^r\]
+%Como se trata de amostras recoremos a Inferencia de forma a tirar conclusoes com um grau de incerteza.\\
+%Durante este relatorio sera demonstrado resultados e suas interpretações.\\
+%No fim apresentado as conclusões que podemos ou sabemos retirar.\\
+%Pretende-se fazer um estudo destas variaveis aleatorias de forma a responder a questoes empostas e tomar decisoes.\\
+
+
+
+Use the following commands-
+
+git add -A to add all files new files, changes and removed files.
+git commit -m  "Your message" to save the changes done in the files.
+git push -u origin master to send your committed changes to a remote repository, where the local branch is named master to the remote named origin
+
+$\bar{X_A}_{n|_{H_0}} \sim N(20.0417 \:,\: \frac{6.4494^2}{n})$ \\
+$C_A=$
+
+$\bar{X_B}_{n|_{H_0}} \sim N(21.5417 \:,\: \frac{6.0909^2}{n})$ \\
+
+$\bar{Y_A}_{n|_{H_0}} \sim N(6.6111 \:,\: \frac{  2.3112^2  }{n})$ \\
+
+$\bar{Y_B}_{n|_{H_0}} \sim N(7.5111 \:,\: \frac{2.5140^2}{n})$ \\
+
+
+
+
+
+
+
